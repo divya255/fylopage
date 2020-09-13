@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400, 700;
+    background-color: hsl(218, 28%, 13%);
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    line-height: 32px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.sns i {
+    margin-left: 5px;
+    font-size: 40px;
+}
+
+i:hover {
+    color: hsl(176, 68%, 64%);
+    cursor: pointer;
+}
+
+button {
+    border: none;
+    background-image: linear-gradient(to right, hsl(176, 68%, 64%) 0%, hsl(182, 68%, 64%) 51%, hsl(198, 60%, 50%) 100%);
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 40px;
+    padding: 10px 27px;
+    margin: 30px 0;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-image: linear-gradient(to left, hsl(176, 68%, 64%) 0%, hsl(182, 68%, 64%) 51%, hsl(198, 60%, 50%) 100%);
+}
+
+input {
+    border-radius: 40px;
+    border: none;
+    padding: 10px 25px;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+.nav {
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-links a {
+    padding: 0 10px;
+}
+
+.sample {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 55px;
+}
+.content h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.sec-2 {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.feature-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.feature-item-content {
+    width: 80%;
+}
+
+.section-container {
+    display: flex;
+    justify-content: center;
+    padding: 70px 0px;
+}
+
+.section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 60%;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.section-link {
+    padding-top: 10px;
+}
+
+.rev-container {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.rev-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background: hsl(219, 30%, 18%);
+    margin: 0 20px;
+    padding: 50px 30px;
+    text-align: left;
+}
+
+.rev-container::before {
+    content: open-quote;
+    color: hsl(176, 68%, 64%);
+    font-size: 60px;
+    position: absolute;
+    left: -5px;
+    top: -5px;
+}
+
+.rev-author {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 15px;
+}
+
+.rev-author-info {
+    margin: 10px;
+}
+
+.rev-author-img img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 0 6px 6px 6px;
+}
+
+.access {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: hsl(217, 28%, 15%);
+    margin: 100px 50px;
+}
+
+.access-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background: hsl(219, 30%, 18%);
+    width: 50%;
+    padding: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.contact, .about-us {
+    display: flex;
+    flex-direction: column;
+}
+
+.address {
+    width: 300px;
+}
+
+@media only screen and (max-width: 700px) {
+    .feature-container {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-img, .section-sec-img {
+        width: 500px;
+    }
+    .feature-item {
+        width: fit-content;
+    }
+    .section-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .rev-container {
+        flex-direction: column;
+        align-items: center;
+    } 
+    .rev-card {
+        margin-bottom: 20px;
+    }
+    .access-card {
+        width: fit-content;
+    }
+    .footer {
+        flex-direction: column;
+        line-height: 30px;
+        padding-left: 50px;
+    }
+}
